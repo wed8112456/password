@@ -4,17 +4,16 @@
 # 對的話 印出登入成功
 
 password = 'a123456'
-chance = 3
-
+time = 3
 
 while True:
-    user = input("請你輸入密碼：")
+    user = input('請輸入密碼：')
     if user == password:
         print('登入成功')
         break
     else:
-        chance -= 1
-        if chance == 0:
+        time -= 1
+        if time == 0:
             break
         else:
-            print(f'密碼錯誤，還有{chance}機會')
+            print(f'輸入錯誤，你還有{time}次機會')
